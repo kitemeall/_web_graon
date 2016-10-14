@@ -1,0 +1,164 @@
+$font-stack:    Helvetica, sans-serif
+$primary-color: #333
+$content-width: 1110px
+$red-c: #ea222a
+$rob-r: "RobotoRegular"
+$rob-b: "RobotoBold"
+$rob-l: "RobotoLight"
+$rob-t: "RobotoThin"
+$lato-b: "LatoBold"
+@mixin transition($time)
+  -webkit-transition: all $time ease
+  -moz-transition:    all $time ease
+  -o-transition:      all $time ease
+  transition:         all $time ease
+
+
+
+a
+  text-decoration: none
+  color: #000
+  &:hover
+    text-decoration: none
+h1
+  margin: 0
+  padding: 0
+  
+body
+  font-size: 16px
+  font-family: $rob-r
+  color: #fff
+
+.cont-width
+  max-width: $content-width
+  margin: auto
+
+.tsp-button
+  background-color: transparent
+  height: 25px
+  border: solid 1px $red-c
+  border-radius: 5px
+  line-height: 25px
+  font-family: $rob-t
+  font-size: 12px
+  padding: 0 25px 0 25px
+  float: right
+  @include transition(0.5s)
+
+  &:hover
+    background-color: $red-c
+header
+  background-color: rgba(0, 0, 0, 0.85)
+  height: 100px
+  position: relative
+  overflow: hidden
+  z-index: 200
+  img
+    float: left
+  ul
+    margin: 0
+    padding: 0
+    display: inline-block
+    margin-left: 250px
+    li
+      display: inline
+      a
+        display: inline-block
+        height: 85px
+        line-height: 145px
+        font-family: $rob-t
+        color: #fff
+        margin-right: 22px
+        @include transition(0.5s)
+        &:hover
+          color: $red-c
+          border-bottom: solid 1px $red-c
+  .phone
+    width: 175px
+    float: right
+    margin-top: 25px
+    font-size: 18px
+    font-family: $lato-b
+    i
+      color: $red-c
+      font-size: 22px
+    span
+      float: right
+    button
+      margin-top: 10px
+
+.red-button
+  width: 100%
+  background-color: $red-c
+  text-transform: uppercase
+  border: none
+  border-radius: 5px
+  font-family: $rob-t
+  padding: 10px
+  border: solid 1px $red-c
+  @include transition(0.5s)
+  &:hover
+    background-color: transparent
+
+.block1
+  height: 650px
+  background-image: url("../img/block1-bg.jpg")
+  margin-top: -100px
+  z-index: -1
+  width: 100%
+  .cont-width
+    position: relative
+    overflow: hidden
+    height: 650px
+  h1
+    font-family: $rob-b
+    font-size: 36px
+    margin-top: 330px
+    text-transform: uppercase
+
+  p
+    font-family: $rob-l
+    text-transform: uppercase
+    margin-top: 20px
+    font-size: 20px
+  .order-call
+    width: 350px
+    background-color: rgba(0,0,0,0.85)
+    position: absolute
+    right: 0
+    top: 220px
+    box-sizing: border-box
+    padding-left: 45px
+    padding-right: 45px
+    padding-bottom: 30px
+    p
+      text-transform: none
+      font-size: 18px
+      text-align: center
+      margin-top: 25px
+    hr
+      width: 150px
+      height: 2px
+      background-color: $red-c
+      border: none
+      margin: 0 auto
+      margin-bottom: 30px
+    input
+      display: block
+      width: 100%
+      height: 45px
+      padding-right: 10px
+      padding-left: 10px
+      margin-bottom: 20px
+      border-radius: 5px
+      border: none
+      font-size: 14px
+      font-family: $rob-t
+      color: #000
+
+.projects-block
+  height: 690px
+  background-image: url("../img/projects-bg.jpg")
+
+
+
